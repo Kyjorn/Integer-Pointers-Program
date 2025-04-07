@@ -12,9 +12,15 @@ int main() {
     //user input
     cout << "Enter three numbers followed by a space: ";
     cin >> num1 >> num2 >> num3;
-
-    //test display
-    //cout << num1 << " " << num2 << " " << num3;
     
+    //pointer to num(s)
+    int *pNum1 = &num1;
+    int *pNum2 = &num3;
+    int *pNum3 = &num3;
+
+    //output of variables and pointers
+    cout << "Number: " << num1 << " | Address: "<< pNum1 << '\n';
+    cout << "Number: " << num2 << " | Address: "<< pNum2 << '\n';
+    cout << "Number: " << num3 << " | Address: "<< pNum3 << '\n';
 return 0;
 }
