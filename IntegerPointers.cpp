@@ -18,5 +18,11 @@ int main() {
     cout << "Number: " << *num1 << " | Address: "<< num1 << '\n';
     cout << "Number: " << *num2 << " | Address: "<< num2 << '\n';
     cout << "Number: " << *num3 << " | Address: "<< num3 << '\n';
+
+    //clean memory
+    delete num1;
+    delete num2;
+    delete num3;
+    
 return 0;
 }
