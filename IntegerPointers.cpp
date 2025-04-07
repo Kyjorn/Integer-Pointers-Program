@@ -5,22 +5,18 @@ using namespace std;
 int main() {
 
     //variables
-    int num1;
-    int num2;
-    int num3;
+    int *num1 = new int;
+    int *num2 = new int;
+    int *num3 = new int;
     
     //user input
     cout << "Enter three numbers followed by a space: ";
-    cin >> num1 >> num2 >> num3;
-    
-    //pointer to num(s)
-    int *pNum1 = &num1;
-    int *pNum2 = &num3;
-    int *pNum3 = &num3;
+    cin >> *num1 >> *num2 >> *num3;
 
     //output of variables and pointers
-    cout << "Number: " << num1 << " | Address: "<< pNum1 << '\n';
-    cout << "Number: " << num2 << " | Address: "<< pNum2 << '\n';
-    cout << "Number: " << num3 << " | Address: "<< pNum3 << '\n';
+    cout << "\n-Values entered-\n";
+    cout << "Number: " << *num1 << " | Address: "<< num1 << '\n';
+    cout << "Number: " << *num2 << " | Address: "<< num2 << '\n';
+    cout << "Number: " << *num3 << " | Address: "<< num3 << '\n';
 return 0;
 }
